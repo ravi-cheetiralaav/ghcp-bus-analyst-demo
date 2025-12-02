@@ -25,13 +25,13 @@ Sarah is a business analyst working with an existing VB.NET and C# codebase (Exp
 
 ## Part 1: Adding Comments to Code (Documenting Methods & Functions)
 
-### Step 1.1: Add XML Documentation to AuthenticationService
+### Step 1.1: Add Documentation to AuthenticationService
 
 **File to Open:** `ExpenseTracker/Services/AuthenticationService.vb`
 
 **Prompt for Copilot Chat:**
 ```
-Add XML documentation comments to all public methods in this file. Include:
+Add  documentation comments to all public methods in this file. Include:
 - Summary of what each method does
 - Parameter descriptions
 - Return value descriptions
@@ -39,13 +39,13 @@ Add XML documentation comments to all public methods in this file. Include:
 ```
 
 **Expected Outcome:**
-- XML doc comments (`'''`) added above each method
+- doc comments (`'''`) added above each method
 - Clear explanations of Register, Login, ChangePassword methods
 - Parameter and return type documentation
 
 **Demo Talking Points:**
 - "As a BA, I need to understand what each method does without diving deep into implementation"
-- "Copilot generates standard XML documentation that developers and tools can use"
+- "Copilot generates standard  documentation that developers and tools can use"
 - "This helps me create requirements and explain functionality to stakeholders"
 
 ---
@@ -387,7 +387,7 @@ Present findings as a BA would for a product backlog review.
 "Hi, I'm Sarah, a Business Analyst. I work with development teams but I'm not a programmer myself. My job is to understand how applications work, document them, and help design improvements. Today I'll show you how GitHub Copilot helps me do this work more effectively with our VB.NET Expense Tracker application."
 
 ### Section 1: Adding Code Comments (5-7 minutes)
-- Demonstrate adding XML docs to methods
+- Demonstrate adding  docs to methods
 - Show inline comments for business logic
 - Explain how this helps BAs understand code
 
