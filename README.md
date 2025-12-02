@@ -118,6 +118,15 @@ Three types of comprehensive summaries:
    dotnet run --project ExpenseTracker\ExpenseTracker.vbproj
    ```
 
+### CLI Build & Run (copy-paste)
+
+If you prefer to run the commands exactly as used in the project CI/logging, use these (they redirect output and can be copied into PowerShell):
+
+```powershell
+dotnet build ExpenseTracker\ExpenseTracker.vbproj 2>&1
+dotnet run --project ExpenseTracker\ExpenseTracker.vbproj
+```
+
 ## First-Time Usage
 
 1. **Launch the application** - You'll see the login screen
