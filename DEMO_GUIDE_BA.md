@@ -76,32 +76,7 @@ Add detailed comments explaining the recurring expense logic in the GetExpensesW
 
 ## Part 2: Creating Non-Technical Documentation
 
-### Step 2.1: Generate Application Architecture Overview
-
-**Prompt for Copilot Chat:**
-```
-Based on the ExpenseTracker VB.NET project, create a high-level architecture document in markdown format that explains:
-- The application structure (Models, Services, Forms, Data layers)
-- How different components interact
-- Key business features (authentication, expense management, recurring expenses, multi-currency, reporting)
-- Use simple, non-technical language suitable for business stakeholders
-```
-
-**Expected Outcome:**
-- Markdown document with architecture overview
-- Layered architecture explanation
-- Feature list with business descriptions
-
-**Where to Save:** `ARCHITECTURE_OVERVIEW.md`
-
-**Demo Talking Points:**
-- "I need to explain this system to non-technical stakeholders"
-- "Copilot generates documentation that bridges technical and business understanding"
-- "This becomes the foundation for requirements documents"
-
----
-
-### Step 2.2: Document Business Rules and Logic
+### Step 2.1: Document Business Rules and Logic
 
 **Prompt for Copilot Chat:**
 ```
@@ -279,68 +254,6 @@ Format as a professional markdown document with executive summary.
 - "Copilot helps me identify what we'll gain and what we might lose in migration"
 - "I can create comprehensive comparison tables that inform decision-making"
 - "This helps the product team prioritize features for the web version"
-
----
-
-## Demo Script Summary
-
-### Opening (2 minutes)
-"Hi, I'm Sarah, a Business Analyst. I work with development teams but I'm not a programmer myself. My job is to understand how applications work, document them, and help design improvements. Today I'll show you how GitHub Copilot helps me do this work more effectively with our VB.NET Expense Tracker application."
-
-### Section 1: Adding Code Comments (5-7 minutes)
-- Demonstrate adding  docs to methods
-- Show inline comments for business logic
-- Explain how this helps BAs understand code
-
-### Section 2: Creating Documentation (8-10 minutes)
-- Generate architecture overview
-- Create business rules document
-- Build data dictionary
-- Highlight how Copilot translates technical to business language
-
-### Section 3: User Documentation (5-7 minutes)
-- Create user guide
-- Generate FAQ
-- Show how BAs can create end-user materials
-
-### Section 4: Change Analysis (5 minutes)
-- Demonstrate impact analysis for new feature
-- Show how Copilot helps assess changes
-
-### Section 5: Code Understanding (3-5 minutes)
-- Explain complex code in business terms
-- Identify improvement opportunities
-
-### Section 6: Modernization Planning (7-10 minutes) **[NEW]**
-- Generate comprehensive modernization proposal
-- Create migration gap analysis
-- Demonstrate how BAs can plan large-scale technical transformations
-- Show cost estimation and risk analysis capabilities
-
-### Closing (2 minutes)
-"GitHub Copilot empowers Business Analysts to work more independently with codebases, create better documentation faster, and bridge the gap between technical and business teams. Whether you're documenting existing systems or planning modernization projects, Copilot accelerates your work from weeks to hours. It's not about replacing developers or architects - it's about enabling BAs to contribute more strategically to technical initiatives."
-
----
-
-## Tips for a Successful Demo
-
-1. **Have the project already open** in VS Code with Copilot enabled
-2. **Pre-select the files** you'll demo in your browser for quick access
-3. **Show both Chat and inline suggestions** to demonstrate versatility
-4. **Use real examples** from the Expense Tracker app for authenticity
-5. **Explain the 'why'** - how this helps Sarah's actual work
-6. **Show iteration** - if Copilot's first answer isn't perfect, refine the prompt
-7. **Keep it business-focused** - emphasize documentation and understanding, not coding
-
----
-
-## Follow-Up Resources
-
-After the demo, share:
-- `README.md` - Project overview
-- `QUICKSTART.md` - Setup guide
-- All generated documentation files
-- GitHub Copilot for Business resources
 
 ---
 
