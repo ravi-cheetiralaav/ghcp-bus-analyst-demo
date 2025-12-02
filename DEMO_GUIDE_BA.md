@@ -74,30 +74,6 @@ Add detailed comments explaining the recurring expense logic in the GetExpensesW
 
 ---
 
-### Step 1.3: Document Database Helper Methods
-
-**File to Open:** `ExpenseTracker/Data/DatabaseHelper.vb`
-
-**Prompt for Copilot Chat:**
-```
-Add comprehensive comments to the DatabaseHelper class explaining:
-- What each method does (InitializeDatabase, ExecuteReader, ExecuteNonQuery, ExecuteScalar)
-- When to use each method
-- What security measures are in place (parameterized queries)
-```
-
-**Expected Outcome:**
-- Method-level documentation
-- Security best practices highlighted
-- Usage guidelines for each helper method
-
-**Demo Talking Points:**
-- "Understanding data access is critical for requirements gathering"
-- "I can now document data flows for compliance and security reviews"
-- "This helps me identify potential risks and improvements"
-
----
-
 ## Part 2: Creating Non-Technical Documentation
 
 ### Step 2.1: Generate Application Architecture Overview
@@ -154,31 +130,7 @@ Write this for a business analyst or product manager, not a developer.
 
 ---
 
-### Step 2.3: Generate Data Dictionary
 
-**Prompt for Copilot Chat:**
-```
-Create a data dictionary for the ExpenseTracker application by analyzing the Models and DatabaseHelper. Include:
-- All database tables and their purpose
-- Column names, data types, and descriptions
-- Relationships between tables
-- Required vs. optional fields
-Format as a markdown table for easy reading.
-```
-
-**Expected Outcome:**
-- Complete data dictionary in table format
-- Clear field descriptions
-- Relationship documentation
-
-**Where to Save:** `DATA_DICTIONARY.md`
-
-**Demo Talking Points:**
-- "Understanding the data model is essential for requirements analysis"
-- "This helps me design reports and new features"
-- "I can share this with stakeholders to discuss data needs"
-
----
 
 ## Part 3: Creating User-Facing Documentation
 
@@ -211,32 +163,9 @@ Use screenshots placeholders and step-by-step instructions. Write for non-techni
 
 ---
 
-### Step 3.2: Create Quick Start Guide
 
-**Prompt for Copilot Chat:**
-```
-Create a 1-page Quick Start guide for new users of the Expense Tracker. Include:
-- 5-minute setup instructions
-- Adding your first expense
-- Viewing your expense summary
-Keep it simple, visual, and action-oriented.
-```
 
-**Expected Outcome:**
-- Concise quick start document
-- Focus on essential first tasks
-- Friendly, encouraging tone
-
-**Where to Save:** `QUICK_START.md`
-
-**Demo Talking Points:**
-- "New users need to get started quickly"
-- "This reduces support tickets and training time"
-- "Copilot helps me focus on the user journey"
-
----
-
-### Step 3.3: Generate FAQ Document
+### Step 3.2: Generate FAQ Document
 
 **Prompt for Copilot Chat:**
 ```
@@ -265,121 +194,7 @@ Provide clear, helpful answers for each question.
 
 ---
 
-## Part 4: Generating Change Documentation
 
-### Step 4.1: Document a Feature Change
-
-**Scenario:** Product team wants to add "Expense Attachments" feature
-
-**Prompt for Copilot Chat:**
-```
-I need to propose adding an "Expense Attachments" feature to the ExpenseTracker app where users can attach receipts (images/PDFs) to expenses. 
-
-Analyze the current codebase and generate:
-1. Impact analysis: What files/classes would need to change?
-2. Data model changes: What new fields/tables are needed?
-3. UI changes: What forms need to be updated?
-4. Business rules: File size limits, supported formats, storage considerations
-5. Implementation complexity estimate (high/medium/low)
-
-Format as a change request document for the development team.
-```
-
-**Expected Outcome:**
-- Detailed change impact analysis
-- Technical requirements in business language
-- Implementation roadmap
-
-**Where to Save:** `CHANGE_REQUEST_ATTACHMENTS.md`
-
-**Demo Talking Points:**
-- "As a BA, I need to assess the impact of proposed changes"
-- "Copilot helps me understand technical implications quickly"
-- "I can provide better estimates and requirements to stakeholders"
-
----
-
-### Step 4.2: Create Release Notes Template
-
-**Prompt for Copilot Chat:**
-```
-Based on the current features in the ExpenseTracker application, create a release notes template that I can use for future releases. Include sections for:
-- New features
-- Improvements
-- Bug fixes
-- Breaking changes
-- Known issues
-
-Provide an example filled in with the current v1.0 features.
-```
-
-**Expected Outcome:**
-- Professional release notes template
-- v1.0 release notes as example
-- Business-friendly format
-
-**Where to Save:** `RELEASE_NOTES_TEMPLATE.md`
-
-**Demo Talking Points:**
-- "Consistent release notes help users and stakeholders stay informed"
-- "Copilot creates templates I can reuse for every release"
-- "This improves communication and change management"
-
----
-
-## Part 5: Code Understanding & Analysis
-
-### Step 5.1: Explain Complex Code Sections
-
-**File to Open:** `ExpenseTracker/Services/ExpenseService.vb` (GetRecurringExpenseInstances method)
-
-**Prompt for Copilot Chat:**
-```
-Explain this GetRecurringExpenseInstances method in simple terms:
-- What problem does it solve?
-- How does it calculate recurring dates?
-- What are the edge cases?
-- Provide an example with actual dates
-
-Explain it as if I'm describing it to a product owner.
-```
-
-**Expected Outcome:**
-- Plain English explanation
-- Business scenario examples
-- Clear understanding of complex logic
-
-**Demo Talking Points:**
-- "I don't need to be a VB.NET expert to understand business logic"
-- "Copilot translates code into business requirements"
-- "This helps me validate if the implementation matches requirements"
-
----
-
-### Step 5.2: Identify Potential Issues or Improvements
-
-**Prompt for Copilot Chat:**
-```
-Review the ExpenseTracker application codebase and identify:
-- Potential usability issues from a business perspective
-- Missing features that users might expect
-- Business logic that could be clearer or more flexible
-- Areas where business rules might conflict or be unclear
-
-Present findings as a BA would for a product backlog review.
-```
-
-**Expected Outcome:**
-- Business-focused improvement suggestions
-- Feature gap analysis
-- Prioritization considerations
-
-**Demo Talking Points:**
-- "Copilot helps me identify opportunities for improvement"
-- "I can build a better product backlog with AI assistance"
-- "This bridges the gap between what we have and what users need"
-
----
 
 ## Demo Script Summary
 
@@ -454,17 +269,4 @@ A: That's where Copilot shines! It can analyze the code and generate meaningful 
 **Q: "How does this help with legacy code?"**  
 A: Perfect for legacy code! BAs can quickly understand old systems and create documentation that was never written.
 
----
 
-## Success Metrics
-
-After implementing this workflow, Sarah can measure:
-- Time saved in code analysis (50-70% reduction)
-- Documentation completeness (90%+ coverage)
-- Stakeholder satisfaction with documentation quality
-- Reduced back-and-forth with developers for clarification
-- Faster onboarding for new team members
-
----
-
-*Demo Guide Version 1.0 - December 2025*
