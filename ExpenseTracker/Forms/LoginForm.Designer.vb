@@ -25,6 +25,7 @@ Partial Class LoginForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.picLogo = New System.Windows.Forms.PictureBox()
         Me.lblUsername = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.lblPassword = New System.Windows.Forms.Label()
@@ -44,6 +45,16 @@ Partial Class LoginForm
         Me.lblTitle.Size = New System.Drawing.Size(200, 30)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Expense Tracker"
+
+        '
+        'picLogo
+        '
+        Me.picLogo.Location = New System.Drawing.Point(320, 10)
+        Me.picLogo.Name = "picLogo"
+        Me.picLogo.Size = New System.Drawing.Size(60, 40)
+        Me.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picLogo.TabIndex = 99
+        Me.picLogo.TabStop = False
         '
         'lblUsername
         '
@@ -129,6 +140,7 @@ Partial Class LoginForm
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.lblUsername)
         Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.picLogo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "LoginForm"
@@ -148,4 +160,5 @@ Partial Class LoginForm
     Friend WithEvents btnExit As Button
     Friend WithEvents lblError As Label
     Friend WithEvents btnRegister As Button
+    Friend WithEvents picLogo As PictureBox
 End Class

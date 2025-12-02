@@ -1,6 +1,31 @@
 Imports System.Windows.Forms
+Imports System.IO
+Imports System.Drawing
 
 Public Class LoginForm
+    Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Try to load logo image similar to MainDashboard
+        Try
+            Dim logoPath As String = Nothing
+            Dim basePaths As String() = {
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "logo.png"),
+                Path.Combine(Directory.GetCurrentDirectory(), "ExpenseTracker", "Assets", "logo.png"),
+                Path.Combine(Directory.GetCurrentDirectory(), "Assets", "logo.png")
+            }
+
+            For Each testPath In basePaths
+                If File.Exists(testPath) Then
+                    logoPath = testPath
+                    Exit For
+                End If
+            Next
+
+            If logoPath IsNot Nothing Then
+                picLogo.Image = Image.FromFile(logoPath)
+            End If
+        Catch
+        End Try
+    End Sub
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         lblError.Text = ""
 
