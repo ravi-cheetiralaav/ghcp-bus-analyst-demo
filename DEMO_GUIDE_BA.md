@@ -7,11 +7,12 @@ Sarah is a business analyst working with an existing VB.NET and C# codebase (Exp
 
 ---
 
-## Demo Objectives
+## Demo Overview
 
-1. **Add comments to the code base** documenting methods and important functions
-2. **Create clear documentation** on the code base for a non-technical user to understand its functionality
-3. **Create documentation** on how to use the application
+This demo showcases GitHub Copilot's capabilities in business analysis and application modernization scenarios. The ExpenseTracker application serves as a practical example for demonstrating various AI-assisted analysis and modernization techniques.
+
+### Available Documents
+- **ExpenseTracker_Modernization_Proposal.md**: Comprehensive modernization design document for converting the VB.NET desktop application to C# ASP.NET Core web application
 
 ---
 
@@ -179,29 +180,20 @@ Provide clear, helpful answers for each question.
 ```
 Analyze the ExpenseTracker VB.NET desktop application and create a comprehensive modernization proposal document for converting it to a C# ASP.NET Core web application. Include:
 
+Analyze the ExpenseTracker VB.NET desktop application and create a comprehensive modernization  design for converting it to a C# /.Net web application. Include:
+
 1. Executive summary with key benefits
 2. Current state analysis (technology stack, features, limitations)
-3. Proposed solution architecture (backend, frontend, database, infrastructure)
-4. Migration strategy with phases and timeline
-5. Feature comparison (desktop vs web)
-6. Technical requirements (functional and non-functional)
-7. Cost estimates (development and infrastructure)
-8. Risk analysis with mitigation strategies
-9. Success metrics
+3. Proposed solution architecture (monolith app, with SQL light inmemory database and form based authentication)
+4. Technical requirements (functional for all the features AS IT IS)
 
-Use business-friendly language suitable for executive stakeholders and technical teams.
+Use language suitable for technical teams.
 Format as a professional markdown document.
 ```
 
-**Expected Outcome:**
-- Comprehensive modernization proposal (10-15 pages)
-- Technology stack recommendations with justifications
-- Phased migration approach (Foundation → API → Frontend → Advanced Features → Deployment)
-- Cost breakdown (development team, infrastructure, timeline)
-- Risk assessment with mitigation plans
-- Success criteria and KPIs
 
-**Where to Save:** `MODERNIZATION_PROPOSAL.md`
+
+**Where to Save:** `ExpenseTracker_Modernization_Proposal.md`
 
 **Demo Talking Points:**
 - "As a BA, I need to help leadership understand the business case for modernization"
@@ -211,49 +203,7 @@ Format as a professional markdown document.
 
 ---
 
-### Step 6.2: Create Migration Gap Analysis
 
-**Prompt for Copilot Chat:**
-```
-Create a detailed gap analysis document comparing the VB.NET desktop Expense Tracker with the proposed C# ASP.NET Core web application. For each feature category, analyze:
-
-1. Features that will be migrated as-is
-2. Features that will be enhanced
-3. Features that will be replaced
-4. New web-only features to add
-5. Gaps or limitations introduced by web platform
-6. Migration complexity (low/medium/high)
-
-Include detailed tables comparing:
-- User authentication and security
-- Expense management (CRUD operations)
-- Search, filter, and list management
-- Reports and summaries
-- Settings and preferences
-- UI/UX considerations
-- Data storage and offline access
-- Performance and scalability
-- Deployment and maintenance
-
-Identify critical gaps with mitigation strategies.
-Format as a professional markdown document with executive summary.
-```
-
-**Expected Outcome:**
-- Detailed feature-by-feature comparison
-- Gap identification (especially offline access trade-off)
-- Enhancement opportunities
-- Mitigation strategies for gaps
-- Migration complexity assessment
-- Prioritized feature list
-
-**Where to Save:** `MIGRATION_GAP_ANALYSIS.md`
-
-**Demo Talking Points:**
-- "Gap analysis is critical for setting stakeholder expectations"
-- "Copilot helps me identify what we'll gain and what we might lose in migration"
-- "I can create comprehensive comparison tables that inform decision-making"
-- "This helps the product team prioritize features for the web version"
 
 ---
 
