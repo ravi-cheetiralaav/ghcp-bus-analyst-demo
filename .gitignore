@@ -398,6 +398,13 @@ FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
 .vscode/*
+
+# Local SQLite DB / local data files (ignore runtime DBs created by the app)
+# Keep image assets (Assets/*.png/.jpg) in source control — only ignore DB files
+/ExpenseTracker/ExpenseTracker.db
+/ExpenseTracker/*.db
+*.db
+
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
